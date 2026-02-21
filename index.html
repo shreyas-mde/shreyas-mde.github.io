@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
+<body class="bg-gray-900 text-white">
+    <nav class="flex items-center justify-between p-5">
+        <div class="text-lg font-bold">My Portfolio</div>
+        <div class="flex space-x-4">
+            <a href="#about" class="hover:text-cyan-400">About</a>
+            <a href="#projects" class="hover:text-cyan-400">Projects</a>
+            <a href="#contact" class="hover:text-cyan-400">Contact</a>
+        </div>
+    </nav>
+    <header class="h-screen flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
+            <p class="mt-4 text-lg">Showcasing my projects and skills in web development</p>
+        </div>
     </header>
-    <main>
-        <section id="case-studies">
-            <h2>Engineering Case Studies</h2>
-            <div class="project-card">
-                <h3>Injection Molded Housing Optimization</h3>
-                <p>Description: Focused on optimizing the design and production process for molded housings to reduce costs and improve quality.</p>
-                <p>Impact Metrics: Reduced production costs by 15%, improved quality rating from 80% to 95%.</p>
+    <section id="about" class="p-10">
+        <h2 class="text-4xl font-bold mb-5">About Me</h2>
+        <p>I am a web developer passionate about creating modern designs with a focus on user experience.</p>
+    </section>
+    <section id="projects" class="p-10">
+        <h2 class="text-4xl font-bold mb-5">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 class="text-2xl font-bold">Project 1</h3>
+                <p>A brief description of project 1.</p>
             </div>
-            <div class="project-card">
-                <h3>Tolerance Stack-Up Monte Carlo Simulator</h3>
-                <p>Description: Developed a simulator for tolerance stack-ups that uses Monte Carlo methods to predict variations in manufacturing processes.</p>
-                <p>Impact Metrics: Increased accuracy in forecasts by 25% and reduced production rework by 10%.</p>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 class="text-2xl font-bold">Project 2</h3>
+                <p>A brief description of project 2.</p>
             </div>
-            <div class="project-card">
-                <h3>UAV Structural Concept Development</h3>
-                <p>Description: Engaged in conceptual development for small UAV structures, focusing on weight reduction and strength optimization.</p>
-                <p>Impact Metrics: Achieved a weight reduction of 20% while maintaining structural integrity.</p>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 class="text-2xl font-bold">Project 3</h3>
+                <p>A brief description of project 3.</p>
             </div>
-            <div class="project-card">
-                <h3>3DF1 Suspension Kinematic Study</h3>
-                <p>Description: Conducted a kinematic study on 3DF1 suspension systems to improve vehicle handling performance.</p>
-                <p>Impact Metrics: Enhanced vehicle handling scores by 30% through optimized suspension design.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 Shreyas Sankenapura</p>
+        </div>
+    </section>
+    <section id="contact" class="p-10">
+        <h2 class="text-4xl font-bold mb-5">Contact Me</h2>
+        <form class="flex flex-col space-y-4">
+            <input type="text" placeholder="Your Name" class="p-2 rounded" required>
+            <input type="email" placeholder="Your Email" class="p-2 rounded" required>
+            <textarea placeholder="Your Message" class="p-2 rounded" required></textarea>
+            <button type="submit" class="bg-cyan-500 p-2 rounded">Send</button>
+        </form>
+    </section>
+    <footer class="text-center p-5">
+        <p>© 2026 My Portfolio</p>
     </footer>
 </body>
 </html>
