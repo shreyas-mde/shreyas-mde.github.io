@@ -1,17 +1,17 @@
-/* Styles for Portfolio Website */
-
+/
+ * Base Styles */
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: #111827; /* Dark header */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,39 +19,32 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background: #e8491d;
+    margin: 20px 0;
 }
 
 nav a {
-    text-decoration: none;
     color: white;
-    padding: 15px 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: #35424a;
+    text-decoration: underline;
 }
 
 /* Section Styles */
 section {
     padding: 20px;
-    margin: 20px 0;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-}
-@media (max-width: 480px) {
-    header, nav {
-        padding: 10px 0;
-    }
-    nav a {
-        padding: 10px;
-    }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111827; /* Dark footer */
+    color: white;
 }
